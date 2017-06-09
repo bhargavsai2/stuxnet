@@ -22,7 +22,7 @@
  	color:white;
  }
  .bounce {
-    position:fixed;
+   /* position:fixed;*/
     transition-delay: 2s;
     -webkit-animation:bounce 1s infinite;
     -moz-animation:bounce 3s infinite;
@@ -31,7 +31,7 @@
     transition-delay: 2s;
     
   }
-  
+ /* 
   @-webkit-keyframes bounce {
     0%       { bottom:0px; }
     50%      { bottom:15px; }
@@ -54,4 +54,4 @@
     0%       { bottom:0px; }
     50%      { bottom:15px; }
     100%     {bottom:20;}
-  }
+  }*/
