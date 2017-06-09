@@ -22,7 +22,7 @@
  	color:white;
  }
  .bounce {
-   /* position:fixed;*/
+    position:fixed;
     transition-delay: 2s;
     -webkit-animation:bounce 1s infinite;
     -moz-animation:bounce 3s infinite;
