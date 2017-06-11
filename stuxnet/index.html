@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
 
@@ -14,25 +14,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
     <script type="text/javascript">
         $(window).load(function() {
-            setTimeout(function(){$(".icon").addClass('animated fadeOutUp')},10000);
+            //("div:first").addClass("w3-image");
+            setTimeout(function(){$(".icon").addClass('animated fadeOutUp')},4000);
 
     });
     </script>
     <style>
-  /* .no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }*/
+   .no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
 .icon {
     position: fixed;
     left: 0px;
     top: 0px;
-   /* width: 100%;
-    height: 100%;
-   /* max-width: 100%;
-    height: auto;*/
+   width: 100%;
+   height: 100%;
+  /*  max-width: 100%;*/
+   /* height: auto;*/
     z-index: 9999;
    /* background: url(mygif.gif) center center cover no-repeat fixed #fff;*/
-        background: url(mygif.gif) center no-repeat #fff;
-
+       background: url(mygif.gif) center center no-repeat fixed #fff;
+}
     </style>
 
     <!-- Bootstrap Core CSS -->
@@ -320,7 +321,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Feedback please</h2>
+                    <h2 class="section-heading head">Feedback please</h2>
+                    <h2 class="section-heading thankmsg">Thank you for Feedback!</h2>
                     <form method="POST" action="">
                     <div class="form-group">
                     <label for="Name">Name:</label>
@@ -335,7 +337,6 @@
                     <textarea rows="5" cols="25" placeholder="feedback" class="form-control"></textarea><br>
                     </div>
                     <button type="button" class="btn btn-default button">send info</button>
-                    
                     </form>
                 </div>
             </div>
@@ -360,8 +361,16 @@
 <script type="text/javascript">
     //animate.css
   $(document).ready(function() {
+   $(".thankmsg").hide();
     $(".button").click(function(){
         $("form").addClass("animated zoomOut");
+        $("form").hide(5000);
+        $(".head").hide();
+
+     //   $(".btn2").click(function(){
+       $(".thankmsg").show();
+   // });
+       // $("form").addClass("animated zoomIn");
        //S $("form").removeClass("animated zoomOut");
     });
   //  $(".well").addClass("animated zoomout");
@@ -428,11 +437,11 @@ var TxtType = function(el, toRotate, period) {
 
 </script>
 <footer class="w3-container w3-black">
-  <div class="w3-section w3-padding-16 w3-xlarge" align="center">
-    <a href="#" class="w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-2x fa-facebook-official"></i></a>
-    <a href="#" class="w3-hover-text-light-blue w3-show-inline-block"><i class="fa fa-2x fa-twitter"></i></a>
-    <a href="#" class="w3-text-light-grey w3-hover-text-white w3-show-inline-block"><i class="fa fa-2x fa-github"></i></a>
-    <a href="#" class="w3-hover-text-cyan w3-show-inline-block"><i class="fa fa-2x fa-linkedin"></i></a>
+  <div class="w3-section w3-xlarge" align="center">
+    <a href="#" class="w3-hover-text-indigo w3-show-inline-block w3-margin-right"><i class="fa fa-lg fa-facebook-official"></i></a>
+    <a href="#" class="w3-hover-text-light-blue w3-show-inline-block w3-margin-right"><i class="fa fa-lg fa-twitter"></i></a>
+    <a href="#" class="w3-text-light-grey w3-hover-text-white w3-show-inline-block"><i class="fa fa-lg fa-github"></i></a>
+    <a href="#" class="w3-hover-text-cyan w3-show-inline-block w3-margin-left"><i class="fa fa-lg fa-linkedin"></i></a>
   </div>
 </footer>
 
